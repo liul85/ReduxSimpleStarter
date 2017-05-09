@@ -1,12 +1,16 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 
-// create a new component which produce html
-const App = () => { return <div> Hi </div> }
+import SearchBar from './components/search-bar';
 
-// class App extends React
+const YOUTUBE_API_KEY = 'AIzaSyDKFPa8BJUcOsLHihCBCdfoXGJlObRIfU8'
 
-
-// take this components generated and put it in dom
+const App = () => {
+  return (
+    <div>
+      <SearchBar />
+    </div>
+    )
+}
 
 ReactDom.render(<App />, document.querySelector('.container'))
